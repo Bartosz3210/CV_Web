@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Bartosz Krukowski</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="name2">Jan Kowalski</h1>
+      <button id="darkModeToggle">Dark Mode</button>
+    </header>
+    <button id="openSidebarBtn" onclick="toggleNav()">☰</button>
+    <div id="sidebar">
+      <a
+        href="#"
+        onclick="scrollToSection('umiejetnosci'); highlightSection('umiejetnosci')"
+        >Umiejętności</a
+      >
+      <a
+        href="#"
+        onclick="scrollToSection('dane-osobowe'); highlightSection('dane-osobowe')"
+        >Dane osobowe</a
+      >
+      <a
+        href="#"
+        onclick="scrollToSection('edukacja'); highlightSection('edukacja')"
+        >Edukacja</a
+      >
+      <a
+        href="#"
+        onclick="scrollToSection('doswiadczenie'); highlightSection('doswiadczenie')"
+        >Doświadczenie zawodowe</a
+      >
+      <a
+        href="#"
+        onclick="scrollToSection('zainteresowania'); highlightSection('zainteresowania')"
+        >Zainteresowania</a
+      >
+    </div>
+    <div class="container">
+      <div class="content-container">
+        <div class="left-side" id="left-side">
+          <section class="section" id="photo">
+            <!-- <img
+               src="placeholder.jpg" 
+              alt="Profile Photo"
+              class="profile-photo" /> -->
+
+            <img
+              src="https://lh3.googleusercontent.com/proxy/eDya-SOM9AyVrQOEJVlcClLioN-_dLIBvsPgeE7mwleyA-63An_b7yJZXkboz_zTbXuVag7b8X1StpbV8XrGiqKd6-rdRFOReKKSJ-dAKMvVO6leWjIFvBiJWy_A"
+              alt="Profile Photo"
+              class="profile-photo" />
+          </section>
+          <section class="section" id="umiejetnosci">
+            <h2 class="section-title">Umiejętności</h2>
+            <ul>
+              <li>Programowanie w językach: Python, Java, C++</li>
+              <li>Znajomość technologii webowych: HTML, CSS, JavaScript</li>
+              <li>Bazy danych: MySQL, PostgreSQL</li>
+              <li>Systemy kontroli wersji: Git</li>
+              <li>
+                Języki obce: angielski (zaawansowany), niemiecki
+                (średniozaawansowany)
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="main-content" id="mainContent">
+          <h1 class="name">Jan Kowalski</h1>
+          <section class="section" id="dane-osobowe">
+            <h2 class="section-title">Dane osobowe</h2>
+            <ul>
+              <li>Adres: ul. Przykładowa 123, 00-001 Warszawa</li>
+              <li>Telefon: 123-456-789</li>
+              <li>Email: jan.kowalski@example.com</li>
+            </ul>
+          </section>
+          <section class="section" id="edukacja">
+            <h2 class="section-title">Edukacja</h2>
+            <ul>
+              <li>2020-2023: Uniwersytet Warszawski, Informatyka</li>
+              <li>
+                2016-2020: Liceum Ogólnokształcące nr 1 w Warszawie, profil
+                matematyczno-fizyczny
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="doswiadczenie">
+            <h2 class="section-title">Doświadczenie zawodowe</h2>
+            <ul>
+              <li>2023-obecnie: Firma IT XYZ, Programista</li>
+              <li>2021-2023: Firma ABC, Stażysta IT</li>
+            </ul>
+          </section>
+          <section class="section" id="zainteresowania">
+            <h2 class="section-title">Zainteresowania</h2>
+            <ul>
+              <li>Programowanie</li>
+              <li>Gry komputerowe</li>
+              <li>Turystyka górska</li>
+              <li>Fotografia</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
